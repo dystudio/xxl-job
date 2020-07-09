@@ -1,0 +1,13 @@
+---
+applications:
+  - name: xxl-job-admin
+    path: ./target/xxl-job-admin-2.2.0.jar
+    routes:
+      - route: xxl-job-admin.apps.dhccloud.com.cn
+    instances: 1
+    memory: 1024M
+    disk_quota: 1024M
+    env:
+      MYSQL_HOST: 'q-n3s3y1.q-g19185.bosh'
+      MYSQL_USER: '8233ae6f4b78450db80a709f5fbdbdb1'
+      MYSQL_PWD: 'drz9iewj00dedusu'
